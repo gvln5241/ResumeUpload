@@ -16,7 +16,7 @@ public class naukriResumeUpload extends browserSettings {
 		homePage hp=new homePage(driver);
 		profilePage pp=new profilePage(driver);
 		
-		driver.get("https://login.naukri.com/nLogin/Login.php");
+		driver.get(PropertiesFile.getValue("Naukri_Login_URL"));
 		
 		lp.setUsername();
 		lp.setPasword();
